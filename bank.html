@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/icono.png">
+    <link rel="stylesheet" href="style2.css">
+    <title>Main</title>
+    <script defer src="data.js"></script>
+    <script defer src="bank.js"></script>
+    <script src="src/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="src/sweetalert2.css">
+</head>
+<body>
+    <div id="fondo"></div>
+    <header>
+        <img src="src/logo.png" alt="Logo de Netflix" id="logo">
+    </header>
+    <main>
+        <div class="operations">
+            <div class="container">
+                <h1 id="name">Welcome</h1>
+                <div class="grises">
+                    <h2>Current balance: $</h2>
+                    <h2 id="balance"></h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round" id="eye">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="12" cy="12" r="2" />
+                        <path d="M22 12c-2.667 4.667 -6 7 -10 7s-7.333 -2.333 -10 -7c2.667 -4.667 6 -7 10 -7s7.333 2.333 10 7" />
+                    </svg>
+                </div>
+                <input type="number" class="grises" id="amount" placeholder="Amount to deposit or withdraw"> 
+                <div class="grid">
+                    <div class="lines">
+                        <div class="blue-buttons">
+                            <p id="100">100</p>
+                            <p id="200">200</p>
+                            <p id="300">300</p>
+                        </div>
+                        <div class="blue-buttons">
+                            <p id="400">400</p>
+                            <p id="500">500</p>
+                            <p id="600">600</p>
+                        </div>
+                        <div class="blue-buttons">
+                            <p id="700">700</p>
+                            <p id="800">800</p>
+                            <p id="900">900</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="login.html" class="no-links"><div class="boton-rojo">Log out</div></a>
+            </div>
+            <div class="container" id="buttons">
+                <button id="withdraw">Cash Withdraw</button>
+                <button id="deposit">Deposit</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
